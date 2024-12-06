@@ -1,0 +1,7 @@
+services:
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.16.1
+    command: filebeat -e -strict.perms=false
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
+      - C:\Users\quangvd.MXV-VN\Documents\NANO\nano-order\logs:/var/log/server
