@@ -1,0 +1,5 @@
+- pipeline.id: system_logs_pipeline
+  path.config: "/usr/share/logstash/pipeline/systemlog.conf"
+
+- pipeline.id: user_logs_pipeline
+  path.config: "/usr/share/logstash/pipeline/userlog.conf"
